@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="purple">
+
+  </div>
+
+  <div class="phone">
+  <div class="screenn">
+    <div class="topp">
+    <img src="images/avatar.jpg" class="sam">
+    <h2>Samuel Green</h2>
+    <p>Available to Walk</p>
+    </div>
+
+    <div class="texts">
+      <div class="gr">
+        <button class="gray">
+          <p>That sounds great. I’d be happy with that.</p>
+        </button>
+
+         <button class="gray">
+          <p>Could you send over some pictures of your dog, please?</p>
+         </button>
+
+      </div>
+      
+
+     
+
+      <div class="photo">
+        <img src="images/dog-image-1.jpg">
+        <img src="images/dog-image-2.jpg">
+        <img src="images/dog-image-3.jpg">
+      </div>
+
+       <div class="wh">
+        <button class="white">
+          <p>Here are a few pictures. She’s a happy girl!</p>
+        </button>
+
+       <button class="small">
+         <p>Can you make it?</p>
+       </button>
+
+       </div>
+      
+      <div class="bt">
+      <button class="l">
+        <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      </button>
+      
+      <button class="btn">
+        <p>30 minute walk</p>
+        <h3>$29</h3>
+      </button>
+
+      <button class="btn">
+        <p>1 hour walk</p>
+        <h3>$49</h3>
+      </button>
+      </div>
+
+
+      <input type="text" placeholder="Type a message…">
+    </div>
+    
+  </div>
+</div>
+
+<h1>Simple booking</h1>
+<p>Stay in touch with our dog walkers through the chat 
+  interface.This makes it easy to discuss arrangements and 
+  make bookings.Once the walk has been completed you can 
+  rate your walker and book again all through the chat.
+</p>
+
+
+<script>
+let body = document.querySelector('body');
+let gr = document.querySelector('.gr');
+let white = document.querySelectorAll('.white');
+let wh = document.querySelector('.wh');
+let gray = document.querySelectorAll('.gray');
+let bt = document.querySelector('.bt');
+let screenn = document.querySelector('.screenn');
+let phone = document.querySelector('.phone');
+let topp = document.querySelector('.topp');
+let sam = document.querySelector('.sam');
+let purple = document.querySelector('.purple');
+let small = document.querySelector('.small');
+let btn = document.querySelectorAll('.btn');
+let l = document.querySelector('.l');
+let photo = document.querySelector('.photo');
+
+
+phone.style.position = "relative";
+
+purple.style.backgroundColor = "purple";
+purple.style.position = "absolute";
+purple.style.top = "0";
+purple.style.left = "0";
+purple.style.width = "100%";
+purple.style.height = "200px";
+purple.style.borderBottomRightRadius = "40px";
+purple.style.borderBottomLeftRadius = "40px";
+purple.style.zIndex = "0";
+
+
+screenn.style.width = "100%";
+screenn.style.height = "100%";
+screenn.style.padding = "15px";
+screenn.style.backgroundColor = "white";
+screenn.style.position = "relative";
+screenn.style.zIndex = "1";
+
+
+topp.style.backgroundColor = "purple";
+topp.style.width = "200px";
+topp.style.height = "100px";
+topp.style.borderRadius = "10px";
+topp.style.padding = "5px";
+topp.style.color = "white";
+
+
+sam.style.width = "35px";
+sam.style.borderRadius = "50%";
+
+
+gray.forEach(g => {
+  g.style.backgroundColor = "#eee";
+  g.style.color = "purple";
+  g.style.borderRadius = "10px";
+  g.style.width = "150px";
+  g.style.padding = "5px";
+  g.style.marginBottom = "5px";
+});
+
+
+white.forEach(w => {
+  w.style.backgroundColor = "white";
+  w.style.borderRadius = "10px";
+  w.style.width = "150px";
+  w.style.padding = "5px";
+  w.style.marginBottom = "5px";
+});
+
+
+small.style.backgroundColor = "white";
+small.style.width = "100px";
+small.style.padding = "5px";
+small.style.borderRadius = "10px";
+
+
+l.style.width = "200px";
+l.style.borderRadius = "15px";
+l.style.height = "100px";
+l.style.padding = "5px";
+
+
+photo.style.display = "flex";
+photo.style.gap = "5px";
+
+
+
+btn.forEach(b => {
+  b.style.display = "flex";
+  b.style.justifyContent = "space-between";
+  b.style.alignItems = "center";
+  b.style.width = "150px";
+  b.style.borderRadius = "15px";
+  b.style.backgroundColor = "purple";
+  b.style.color = "white";
+  b.style.padding = "10px";
+  b.style.marginBottom = "5px";
+});
+</script>
+
+
+
+</body>
+</html>
